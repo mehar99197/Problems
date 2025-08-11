@@ -1,21 +1,25 @@
 #include <iostream>
 #include <vector>
 #include <string>
+
 using namespace std;
+
 struct BookInfo{
     string title;
     string author;
 };
+
 class Book {
-  private:
-  vector <BookInfo> BookList;
-public:
-    void addbook();
-    void displaybooks();
-    void pickbook();
-    void returnbook();
-    void totalbooks();
+    private:
+        vector <BookInfo> BookList; 
+    public:
+        void addbook();
+        void displaybooks();
+        void pickbook();
+        void returnbook();
+        void totalbooks();
 };
+
 void Book::addbook() {
     cin.ignore();
     BookInfo newBook;
@@ -51,6 +55,7 @@ void Book::returnbook() {
 void Book::totalbooks() {
     cout << "Total books are being counted..." << endl;
 }
+
 int main() {
     Book library;
     Book Bookdetails;
